@@ -61,7 +61,7 @@
         width: 150px;
         height: 30px;
         color: white;
-        background-color: crimson;
+        background-color: grey;
         border: none;
         border-radius: 10px;
         font-weight: 500;
@@ -73,7 +73,10 @@
       }
 
       span {
-        color: green;
+        color: grey;
+      }
+      .error{
+        color: red;
       }
     }
   }

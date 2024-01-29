@@ -63,6 +63,7 @@
       }
       h2 {
         font-size: 35px;
+        // color: grey;
       }
       h3 {
         font-size: 30px;
@@ -106,5 +107,9 @@
         }
       }
     }
+  }
+
+  .typed-text {
+    white-space: nowrap;
   }
 }
