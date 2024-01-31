@@ -44,7 +44,7 @@ export default function Contact() {
 
     // If all fields are valid, proceed to submit the form
     if (isValid) {
-      // Submit form logic (for example, sending the data to the server)
+      console.log('name', name)
       setMessageSent(true);
     }
   };
@@ -76,6 +76,7 @@ export default function Contact() {
         <h2>Get In Touch</h2>
         <form onSubmit={handleSubmit}>
           <input
+            className="content"
             type="text"
             placeholder="Name"
             value={name}
@@ -83,13 +84,23 @@ export default function Contact() {
           />
           {nameError && <span className="error">{nameError}</span>}
           <input
+            className="content"
             type="text"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           {emailError && <span className="error">{emailError}</span>}
+          <input
+            className="content"
+            type="text"
+            placeholder="Subject"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          {nameError && <span className="error">{nameError}</span>}
           <textarea
+            className="content"
             placeholder="Message"
             value={messageText}
             onChange={(e) => setMessageText(e.target.value)}

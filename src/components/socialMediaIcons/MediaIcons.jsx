@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Facebook, LinkedIn, Instagram } from '@material-ui/icons';
+import { Facebook, LinkedIn, Instagram, GitHub } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +31,9 @@ const SocialMediaIcons = () => {
     <div className={classes.root}>
       <a href="https://www.linkedin.com/in/praneethpalampalli/" target="_blank" rel="noopener noreferrer">
         <LinkedIn className={classes.icon} />
+      </a>
+      <a href="https://github.com/PalampalliPraneeth" target="_blank" rel="noopener noreferrer">
+        <GitHub className={classes.icon} />
       </a>
       <a href="https://www.facebook.com/praneethkumarreddy.09?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
         <Facebook className={classes.icon} />

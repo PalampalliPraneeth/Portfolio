@@ -1,11 +1,11 @@
 import Topbar from "./components/topbar/Topbar";
-import Intro from "./components/intro/Intro"
-import Portfolio from "./components/portfolio/Portfolio"
-import Works from "./components/works/Works"
-import Testimonials from "./components/testimonials/Testimonials"
-import Contact from "./components/contact/Contact"
+import Intro from "./components/intro/Intro";
+import Education from "./components/education/Education";
+import Portfolio from "./components/portfolio/Portfolio";
+import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
 import SocialMediaIcons from "./components/socialMediaIcons/MediaIcons";
-import "./app.scss"
+import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 
@@ -18,7 +18,7 @@ function App() {
      <div className="sections">
        <Intro/>
        <Portfolio/>
-       {/* <Works/> */}
+       <Education/>
        {/* <Testimonials/> */}
        <Contact/>
      </div>
