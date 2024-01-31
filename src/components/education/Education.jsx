@@ -31,15 +31,24 @@ function Education() {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
-              <h3 className="vertical-timeline-element-title">
-                {element.title}
-              </h3>
-              <h5 className="vertical-timeline-element-subtitle">
-                {element.date}
-              </h5>
-              <h5 className="vertical-timeline-element-subtitle">
-                {element.location}
-              </h5>
+              <div style={{ display: "flex", alignItems: "center" }}>
+              {element.image && (
+                  <img src={element.image} alt="Logo" style={{ width: "50px", marginRight: "10px" }} />
+                )}
+                <div>
+                  <h3 className="vertical-timeline-element-title">
+                    {element.title}
+                  </h3>
+                  <div>
+                    <h5 className="vertical-timeline-element-subtitle">
+                      {element.date}
+                    </h5>
+                    <h5 className="vertical-timeline-element-subtitle">
+                      {element.location}
+                    </h5>
+                  </div>
+                </div>
+              </div>
               <p id="description">{element.description}</p>
               {showButton && (
                 <a
