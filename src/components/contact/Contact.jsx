@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useRef  } from "react";
 import "./contact.scss";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [messageText, setMessageText] = useState("");
   const [messageSent, setMessageSent] = useState(false);
 
@@ -27,6 +30,7 @@ export default function Contact() {
       setNameError("Name cannot contain special characters");
       isValid = false;
     }
+
     if (email.trim() === "") {
       setEmailError("Email is required");
       isValid = false;
@@ -34,6 +38,12 @@ export default function Contact() {
       setEmailError("Invalid email format");
       isValid = false;
     }
+
+    if (subject.trim() === "") {
+      setMessageError("Subject is required");
+      isValid = false;
+    } 
+
     if (messageText.trim() === "") {
       setMessageError("Message is required");
       isValid = false;
@@ -46,6 +56,13 @@ export default function Contact() {
     if (isValid) {
       console.log('name', name)
       setMessageSent(true);
+      emailjs.sendForm('service_gpdq3hc', 'template_i144hqp', form.current, 'baGbOBfbcmdYcy4aC')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
     }
   };
 
@@ -74,9 +91,10 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Get In Touch</h2>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <input
             className="content"
+            name="name"
             type="text"
             placeholder="Name"
             value={name}
@@ -85,6 +103,7 @@ export default function Contact() {
           {nameError && <span className="error">{nameError}</span>}
           <input
             className="content"
+            name="email"
             type="text"
             placeholder="Email"
             value={email}
@@ -93,14 +112,16 @@ export default function Contact() {
           {emailError && <span className="error">{emailError}</span>}
           <input
             className="content"
+            name="subject"
             type="text"
             placeholder="Subject"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
           />
           {nameError && <span className="error">{nameError}</span>}
           <textarea
             className="content"
+            name="message"
             placeholder="Message"
             value={messageText}
             onChange={(e) => setMessageText(e.target.value)}

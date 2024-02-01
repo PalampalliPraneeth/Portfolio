@@ -2,6 +2,25 @@ import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+  const handleDownloadResume = () => {
+    // Replace "resume.pdf" with the actual path to your resume PDF file
+    const resumePath = "assets/Resume.pdf";
+
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = resumePath;
+    link.download = "PraneethKumarReddy.pdf";
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger the click event on the link
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -15,7 +34,15 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>ppalampa@buffalo.edu</span>
+            <a href="mailto:ppalampa@buffalo.edu" className="email">ppalampa@buffalo.edu</a>
+          </div>
+          <div className="itemContainer">
+          <input
+            type="button"
+            className="downloadButton"
+            value="Resume"
+            onClick={handleDownloadResume}
+          />
           </div>
         </div>
         <div className="right">

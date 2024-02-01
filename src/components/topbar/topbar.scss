@@ -37,6 +37,23 @@
           display: none;
         }
 
+        .downloadButton{
+          border: none;
+          background: none;
+          padding: 0;
+          margin: 0;
+          font: inherit;
+          cursor: pointer;
+          color: inherit;
+          outline: none;
+        }
+
+        .email{
+          cursor: pointer;
+          color: inherit;
+          text-decoration: none;
+        }
+
         .icon {
           font-size: 18px;
           margin-right: 5px;
