@@ -64,12 +64,14 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
-            <h3>{d.title}</h3>
+          <div className="item" key={d.id}>
+            <a href={d.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={d.img}
+                alt=""
+              />
+              <h3>{d.title}</h3>
+            </a>
           </div>
         ))}
       </div>

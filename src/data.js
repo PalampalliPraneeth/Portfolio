@@ -7,21 +7,23 @@ export const featuredPortfolio = [
     },
     {
       id: 2,
-      title: "Rampa UI Design",
+      title: "Farmetrix Mobile App",
       img:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+        "assets/Farmetrix.jpeg",
+      url:"https://github.com/PalampalliPraneeth/Farmetrix"
     },
     {
       id: 3,
-      title: "E-commerce Web Design",
+      title: "Sentiement Analysis using Amazon Reviews",
       img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+        "assets/sentiment.webp",
+      url:"https://github.com/PalampalliPraneeth/Hospital-management/tree/main/web"
     },
     {
       id: 4,
-      title: "Relax Mobile App",
+      title: "Napier Medcare",
       img:
-        "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+        "assets/napier.png",
     },
     {
       id: 5,

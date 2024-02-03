@@ -51,6 +51,7 @@
       position: relative;
       transition: all .5s ease;
       cursor: pointer;
+      overflow: hidden;
 
       @include mobile{
         width: 130px;

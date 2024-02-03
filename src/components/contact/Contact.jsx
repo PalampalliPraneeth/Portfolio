@@ -59,7 +59,11 @@ export default function Contact() {
       emailjs.sendForm('service_gpdq3hc', 'template_i144hqp', form.current, 'baGbOBfbcmdYcy4aC')
       .then((result) => {
           console.log(result.text);
-          e.target.reset();
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessageText("");
+          setTimeout(() => setMessageSent(false), 5000);
       }, (error) => {
           console.log(error.text);
       });
