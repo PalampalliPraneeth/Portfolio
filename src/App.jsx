@@ -8,6 +8,7 @@ import SocialMediaIcons from "./components/socialMediaIcons/MediaIcons";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import Skills from "./components/skills/Skills";
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -19,6 +20,7 @@ function App() {
        <Intro/>
        <Portfolio/>
        <Education/>
+       <Skills/>
        {/* <Testimonials/> */}
        <Contact/>
      </div>
