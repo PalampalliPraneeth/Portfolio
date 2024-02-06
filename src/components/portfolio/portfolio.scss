@@ -63,6 +63,14 @@
         font-size: 20px;
       }
 
+      .title {
+        display: none;
+      }
+      
+      a:hover .title {
+        display: block;
+      }
+
       img {
         width: 100%;
         height: 100%;

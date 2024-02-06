@@ -21,7 +21,7 @@ function App() {
        <Portfolio/>
        <Education/>
        <Skills/>
-       {/* <Testimonials/> */}
+       <Testimonials/>
        <Contact/>
      </div>
      <SocialMediaIcons/>

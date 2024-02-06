@@ -10,6 +10,7 @@ import {
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
+  const [hovered, setHovered] = useState(null);  
   const list = [
     {
       id: "featured",
@@ -63,16 +64,18 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        {data.map((d) => (
-          <div className="item" key={d.id}>
-            <a href={d.url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={d.img}
-                alt=""
-              />
-              <h3>{d.title}</h3>
-            </a>
-          </div>
+      {data.map((d) => (
+        <div 
+          className="item"
+          key={d.id}
+          onMouseEnter={() => setHovered(d.id)}
+          onMouseLeave={() => setHovered(null)}  
+        >
+          <a href={d.url} target="_blank" rel="noopener noreferrer">
+            <img src={d.img} alt="" />  
+          </a>
+          {hovered === d.id && <h3>{d.title}</h3>}
+        </div>
         ))}
       </div>
     </div>
