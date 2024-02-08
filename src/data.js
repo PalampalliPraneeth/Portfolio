@@ -9,7 +9,7 @@ export const featuredPortfolio = [
       id: 2,
       title: "Farmetrix Mobile App",
       img:
-        "assets/Farmetrix.jpeg",
+        "assets/upl.png",
       url:"https://github.com/PalampalliPraneeth/Farmetrix"
     },
     {

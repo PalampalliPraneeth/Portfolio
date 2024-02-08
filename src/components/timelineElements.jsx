@@ -14,7 +14,7 @@ let timelineElements = [
     title: "Associate Software Engineer",
     location: "Pune, India",
     description:
-      "Used React.Js and React-redux for development and maintenance of reusable components and state management for PAANS application. Implemented a Power BI dashboard, yielding a 20% enhancement in API performance monitoring, displaying vital metrics like API hits, accepted and rejected policies.",
+      "Used React.Js and React-redux for development and maintenance of reusable components and state management for PAANS application. Implemented a Power BI dashboard, yielding 20% enhancement in API performance monitoring, displaying vital metrics like API hits, accepted and rejected policies.",
     buttonText: "Company Website",
     date: "2021 - 2023",
     icon: "work",

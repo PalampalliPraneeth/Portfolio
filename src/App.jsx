@@ -9,6 +9,7 @@ import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 import Skills from "./components/skills/Skills";
+import Certfications from "./components/certifications/Certifications";
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -21,6 +22,7 @@ function App() {
        <Portfolio/>
        <Education/>
        <Skills/>
+       <Certfications/>
        <Testimonials/>
        <Contact/>
      </div>

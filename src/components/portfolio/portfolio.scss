@@ -7,7 +7,10 @@
   align-items: center;
 
   h1 {
+    padding-top: 3%;
+    overflow: hidden;
     font-size: 50px;
+    color: grey;
 
     @include mobile{
       font-size: 20px;

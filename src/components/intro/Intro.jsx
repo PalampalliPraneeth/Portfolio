@@ -29,9 +29,9 @@ export default function Intro() {
              <span className="typed-text" ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        {/* <a href="#portfolio">
           <img src="assets/down.png" alt="" />
-        </a>
+        </a> */}
       </div>
     </div>
   );

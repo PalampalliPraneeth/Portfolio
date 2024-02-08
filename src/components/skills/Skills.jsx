@@ -50,7 +50,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="title-container">
-          <h1 className="title-text">Skills</h1>
+          <h1 className="title-text" id='skills'>Skills</h1>
         </div>
       <div className="right-skills">
         <div className="skill-box">
