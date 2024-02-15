@@ -54,18 +54,18 @@ export default function Contact() {
 
     // If all fields are valid, proceed to submit the form
     if (isValid) {
-      console.log('name', name)
+      // console.log('name', name)
       setMessageSent(true);
       emailjs.sendForm('service_gpdq3hc', 'template_i144hqp', form.current, 'baGbOBfbcmdYcy4aC')
       .then((result) => {
-          console.log(result.text);
+          // console.log(result.text);
           setName("");
           setEmail("");
           setSubject("");
           setMessageText("");
           setTimeout(() => setMessageSent(false), 5000);
       }, (error) => {
-          console.log(error.text);
+          // console.log(error.text);
       });
     }
   };
