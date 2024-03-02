@@ -38,14 +38,14 @@ export default function Skills() {
           <span className="title">Angular JS</span>
           <div className="skill-bar">
             <div className="filled" style={{ width: '40%' }}></div>
-            <span className="percentage">40%</span>
+            <span className="percentage">30%</span>
           </div>
         </div>
         <div className="skill-box">
           <span className="title">React Native</span>
           <div className="skill-bar">
             <div className="filled" style={{ width: '65%' }}></div>
-            <span className="percentage">65%</span>
+            <span className="percentage">40%</span>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Skills() {
           <span className="title">Python</span>
           <div className="skill-bar">
             <div className="filled nodejs" style={{ width: '72%' }}></div>
-            <span className="percentage">72%</span>
+            <span className="percentage">70%</span>
           </div>
         </div>
         <div className="skill-box">

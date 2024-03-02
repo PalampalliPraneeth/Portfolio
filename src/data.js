@@ -36,10 +36,25 @@ export const featuredPortfolio = [
     },
     {
       id: 6,
-      title: "Banking App",
+      title: "HR Analysis using r",
       img:
-        "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
+      "assets/hr.png",
+      url:"https://github.com/PalampalliPraneeth/HR-Analysis"
     },
+    {
+      id: 6,
+      title: "Red Wine Quality",
+      img:
+      "assets/red_wine.png",
+      url:"https://github.com/PalampalliPraneeth/Red-Wine-Quality-"
+    },
+    // {
+    //   id: 7,
+    //   title: "Red Wine Quality",
+    //   img:
+    //   "assets/red_wine_quality.png",
+    //   url:"https://github.com/PalampalliPraneeth/Wordle-Clone"
+    // },
   ];
   
   export const webPortfolio = [
@@ -81,18 +96,20 @@ export const featuredPortfolio = [
     },
   ];
   
-  export const mobilePortfolio = [
+  export const dataPortfolio = [
     {
       id: 1,
-      title: "Mobile Social Media App",
+      title: "HR Analysis using r",
       img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+      "assets/hr.png",
+      url:"https://github.com/PalampalliPraneeth/HR-Analysis"
     },
     {
       id: 2,
-      title: "Mobile Rampa UI Design",
+      title: "Red Wine Quality",
       img:
-        "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
+      "assets/red_wine.png",
+      url:"https://github.com/PalampalliPraneeth/Red-Wine-Quality-"
     },
     {
       id: 3,

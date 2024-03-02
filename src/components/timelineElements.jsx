@@ -4,7 +4,7 @@ let timelineElements = [
     title: "University at Buffalo(Suny Buffalo)",
     location: "Buffalo, USA",
     description:
-      "......",
+      "Pursued a Master's in Business Analytics ",
     date: "2023 - 2024",
     icon: "school",
     image: "assets/UB.png"
