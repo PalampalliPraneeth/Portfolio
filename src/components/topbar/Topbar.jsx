@@ -1,5 +1,5 @@
 import "./topbar.scss";
-// import { Person, Mail } from "@material-ui/icons";
+import { Person, Mail } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   const handleDownloadResume = () => {
@@ -29,11 +29,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             Portfolio.
           </a>
           <div className="itemContainer">
-            {/* <Person className="icon" /> */}
+            <Person className="icon" />
             <a href="tel:+17163069932" className="email">716-306-9932</a>
           </div>
           <div className="itemContainer">
-            {/* <Mail className="icon" /> */}
+            <Mail className="icon" />
             <a href="mailto:ppalampa@buffalo.edu" className="email">ppalampa@buffalo.edu</a>
           </div>
           <div className="itemContainer">
